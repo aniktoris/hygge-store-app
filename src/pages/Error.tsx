@@ -14,7 +14,7 @@ function Error() {
     </div>
     <div className="mt-10">
     <Button asChild size='lg' variant='secondary'>
-      <Link to='/home'>
+      <Link to='/'>
         Go back home
       </Link>
     </Button>
