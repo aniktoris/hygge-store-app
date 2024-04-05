@@ -1,3 +1,4 @@
+import { ErrorElement } from './components/ErrorElement';
 import {
   HomeLayout,
   Landing,
@@ -39,7 +40,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'about',
-        element: <About/>
+        element: <About/>,
+        errorElement: <ErrorElement/>
       },
       {
         path: 'checkout',
