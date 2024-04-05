@@ -14,6 +14,7 @@ import {
 } from './pages';
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { loader } from './pages/Landing';
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,8 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Landing/>
+        element: <Landing/>,
+        loader: loader
       },
       {
         path: 'products',
