@@ -11,7 +11,7 @@ export const loader: LoaderFunction = async (): Promise<ProductsResponse> => {
   return { ...response.data };
 }
 
-export function Landing() {
+function Landing() {
   const result = useLoaderData() as ProductsResponse;
   console.log(result);
 
@@ -22,3 +22,5 @@ export function Landing() {
   </>
   );
 }
+
+export default Landing;
